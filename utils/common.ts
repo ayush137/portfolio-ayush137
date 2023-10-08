@@ -1,7 +1,7 @@
 export const ScrollToIdFunction = (id: string, smooth?: boolean) => {
   var element = document.getElementById(id);
   if (element)
-    element.scrollIntoView({ behavior: smooth ? "smooth" : "instant" });
+    element.scrollIntoView({ behavior: smooth ? "smooth" : undefined });
 };
 
 export const githubURL = "https://github.com/ayush137";
