@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&family=Manrope&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-stop: always;
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+}
+.manrope {
+  font-family: "Manrope", sans-serif;
+}
+p {
+  hyphens: auto;
+}
+
+.i--sc {
+  cursor: pointer;
+}
+.i--sc-short {
+  display: block;
+}
+.i--sc-long {
+  display: none;
+}
+.i--sc:hover .i--sc-short {
+  display: none;
+}
+.i--sc:hover .i--sc-long {
+  display: block;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
